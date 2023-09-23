@@ -1,5 +1,5 @@
 <img src="https://github.com/DanielSant0s/AthenaEnv/assets/47725160/f507ad9b-f9a1-4000-a454-ff824bc9d70b" alt="Logo" width="100%" height="auto">
-<h1 style="text-align: center">ATHENA V3 MODULES</h1>
+<h1 style="text-align: center">ATHENA MODULES</h1>
 <p>With these modules I've created, it will make it easier to develop apps and games on Athena v3/v2.</p>
 
 [athenaEnv](https://github.com/DanielSant0s/AthenaEnv)
