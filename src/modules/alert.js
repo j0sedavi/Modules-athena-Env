@@ -29,4 +29,6 @@ export function Draw() {
 export function Hide() {
   display = false;
 }
-export edit(width,height,colorBg,colorTitle,colordescription,scaletitle,scale,description,bgp)
+export edit(width,height,colorBg,colorTitle,colordescription,scaletitle,scale,description,bgp) {
+  
+}
