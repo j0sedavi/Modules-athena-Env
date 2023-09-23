@@ -147,7 +147,7 @@ const isInArray = util.arrayInclude([1, 2, 3], 2);
 ```
 <br />
 <br />
-<h2>module TEXT:</h2>
+module TEXT:
 
 ```js 
  import * as text from './modules/text.js';
