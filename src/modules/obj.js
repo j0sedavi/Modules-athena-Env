@@ -79,14 +79,12 @@ export class object {
       const overlapY = Math.min(thisBottom, objBottom) - Math.max(this.y, obj.y);
 
       if (overlapX < overlapY) {
-        // Colisão é mais estreita horizontalmente, ajuste X
         if (this.x < obj.x) {
           this.x -= overlapX;
         } else {
           this.x += overlapX;
         }
       } else {
-        // Colisão é mais estreita verticalmente, ajuste Y
         if (this.y < obj.y) {
           this.y -= overlapY;
         } else {
