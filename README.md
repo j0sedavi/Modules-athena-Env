@@ -154,7 +154,7 @@ const isInArray = util.arrayInclude([1, 2, 3], 2);
 ```
 <br />
 <br />
-
+<h2>shortly...</h2>
 <br />
 <br />
 
