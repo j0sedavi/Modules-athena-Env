@@ -145,14 +145,6 @@ const radians = util.degreesToRadians(90);
 // Check if a value exists in an array
 const isInArray = util.arrayInclude([1, 2, 3], 2);
 ```
-<br /><br /><br />
-<h2>module TEXT:</h2>
-
-
-
-```javascript
- import * as text from './modules/text.js';
-```
 <br />
 <br />
 <h2>module TEXT:</h2>
