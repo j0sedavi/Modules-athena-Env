@@ -136,6 +136,60 @@ export function count(c,str) {
   }
   return counter
 }
+export function isJSON(jsonString) {
+    try {
+        JSON.parse(jsonString);
+        return true;
+    } catch (error) {
+        return false; 
+    }
+}
+export function formatCurrency(valor) {
+    return valor.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
+export function UUID() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        const r = Math.random() * 16 | 0;
+        const v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+}
+export function trim(str) {
+    return str.trim();
+}
+export function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+export function replaceAll(str, search, replacement) {
+    return str.replace(new RegExp(search, 'g'), replacement);
+}
+export function removeDuplicates(array) {
+    return Array.from(new Set(array));
+}
+export function sortNumbersAscending(array) {
+    return array.sort((a, b) => a - b);
+}
+export function isNull(value) {
+    return value === null || value === undefined;
+}
+export function isArray(obj) {
+    return Array.isArray(obj);
+}
+export function isPrime(numero) {
+    if (numero <= 1) return false;
+    if (numero <= 3) return true;
+
+    if (numero % 2 === 0 || numero % 3 === 0) return false;
+
+    let i = 5;
+    while (i * i <= numero) {
+        if (numero % i === 0 || numero % (i + 2) === 0) return false;
+        i += 6;
+    }
+
+    return true;
+}
+
 export function isdigit(str) {
   if(typeof str == "number") {
     return true;
