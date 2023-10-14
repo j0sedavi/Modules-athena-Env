@@ -45,7 +45,6 @@ export function cutSpriteSheet(image,width,height,x,y) {
   image.starty = y;
   image.endx = x + width;
   image.endy = y + height;
-  return true;
 }
 export function insertLineBreaks(text, charactersPerLine) {
   let result = '';
