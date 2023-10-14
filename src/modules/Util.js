@@ -120,6 +120,20 @@ export function degreesToRadians(graus) {
 export function arrayInclude(array, valor) {
   return array.includes(valor);
 }
+export function getItemPosition(item,array) {
+  if(array.indexOf(item) !== -1) {
+    return array.indexOf(item)
+  }else{
+    return false
+  }
+}
+export function isdigit(str) {
+  if(typeof str == "number") {
+    return true;
+  }else{
+    return false;
+  }
+}
 export function openJsonFile(cfile) {
   
 }
