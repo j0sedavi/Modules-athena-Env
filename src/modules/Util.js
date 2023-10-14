@@ -124,8 +124,17 @@ export function getItemPosition(item,array) {
   if(array.indexOf(item) !== -1) {
     return array.indexOf(item)
   }else{
-    return false
+    return -1
   }
+}
+export function count(c,str) {
+  let counter = 0;
+  for(let i = 0;i < str.length;i++) {
+    if(str[i].toLowerCase() === c) {
+      counter++
+    }
+  }
+  return counter
 }
 export function isdigit(str) {
   if(typeof str == "number") {
