@@ -43,9 +43,9 @@ export function limitTextWithEllipsis(text, maxLength) {
   }
   return text.substring(0, maxLength) + '...';
 }
-export function getDistance(x1,y1,x2,y2) {
-  let dx = x2 - x1;
-  let dy = y2 - y1;
+export function getDistance(x,y,x2,y2) {
+  let dx = x2 - x;
+  let dy = y2 - y;
   return Math.sqrt(dx * dx + dy * dy);
 }
 export function random(min,max) {
