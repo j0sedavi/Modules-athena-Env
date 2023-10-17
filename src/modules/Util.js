@@ -1,32 +1,12 @@
-//By Daviz7 module util Athena V3
-/*  Funções
-centerObject
-removeAccents
-cutSpriteSheet
-insertLineBreaks
-limitTextWithEllipsis
-getDistance
-random
-clamp
-shuffleArray
-calculateAverage
-findMaxValue
-findMinValue
-degreesToRadians
-arrayInclude
-openJsonFile
-editFile
-createfile
-*/
 export function centerObject(width,height) {
   let sc = Screen.getMode();
   let list = {
     x: sc.width / 2 - width / 2,
-    x: sc.height / 2 - height / 2
+    y: sc.height / 2 - height / 2
   };
   return list;
 }
-function removeAccents(palavra) {
+export function removeAccents(palavra) {
   const mapaAcentos = {
     'á': 'a', 'à': 'a', 'â': 'a', 'ã': 'a', 'ä': 'a',
     'é': 'e', 'è': 'e', 'ê': 'e', 'ë': 'e',
@@ -45,6 +25,7 @@ export function cutSpriteSheet(image,width,height,x,y) {
   image.starty = y;
   image.endx = x + width;
   image.endy = y + height;
+  return true;
 }
 export function insertLineBreaks(text, charactersPerLine) {
   let result = '';
@@ -116,14 +97,37 @@ export function findMinValue(array) {
 export function degreesToRadians(graus) {
   return graus * (Math.PI / 180);
 }
+export function centerFont(font,text) {
+  let sc = Screen.getMode();
+  let ft = font.getTextSize(removeAccents(text));
+  let list = {
+    x: sc.width / 2 - ft.width / 2,
+    y: sc.height / 2 - ft.height / 2
+  }
+  return list;
+}
+export function centerFontAtObject(x1,y1,width1,height1,font,text) {
+  let objX = x1;
+  let objY = y1;
+  let sz = font.getTextSize(removeAccents(text));
+  let h = (width1 - sz.width) / 2;
+  let v = (height1 - sz.height) / 2;
+  let newX = x1 + h;
+  let newY = y1 + v;
+  let list = {
+    x: newX,
+    y:newY
+  }
+  return list;
+}
 export function arrayInclude(array, valor) {
   return array.includes(valor);
 }
-export function getItemPosition(item,array) {
-  if(array.indexOf(item) !== -1) {
-    return array.indexOf(item)
-  }else{
-    return -1
+export function getItemPosition(item, array) {
+  if (array.indexOf(item) !== -1) {
+    return array.indexOf(item);
+  } else {
+    return -1;
   }
 }
 export function count(c,str) {
@@ -153,9 +157,6 @@ export function UUID() {
         return v.toString(16);
     });
 }
-export function trim(str) {
-    return str.trim();
-}
 export function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
@@ -175,33 +176,19 @@ export function isArray(obj) {
     return Array.isArray(obj);
 }
 export function isPrime(numero) {
-    if (numero <= 1) return false;
-    if (numero <= 3) return true;
+  if (numero <= 1) return false;
+  if (numero <= 3) return true;
 
-    if (numero % 2 === 0 || numero % 3 === 0) return false;
+  if (numero % 2 === 0 || numero % 3 === 0) return false;
 
-    let i = 5;
-    while (i * i <= numero) {
-        if (numero % i === 0 || numero % (i + 2) === 0) return false;
-        i += 6;
-    }
-
-    return true;
-}
-
-export function isdigit(str) {
-  if(typeof str == "number") {
-    return true;
-  }else{
-    return false;
+  let i = 5;
+  while (i * i <= numero) {
+    if (numero % i === 0 || numero % (i + 2) === 0) return false;
+    i += 6;
   }
+
+  return true;
 }
-export function openJsonFile(cfile) {
-  
-}
-export function editFile(cfile,edit) {
-  
-}
-export function createFile(cfile) {
-  
+export function isdigit(str) {
+  return !isNaN(parseFloat(str)) && isFinite(str);
 }
