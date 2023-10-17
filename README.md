@@ -219,14 +219,14 @@ This function calculates the X and Y coordinates to center a given text on the s
 
 ### Parameters
 
-- `font` (Font): The font object used to render the text.
-- `text` (string): The text to be centered on the screen.
+- `font `(Font): The font object used to render the text.
+- `text `(string): The text to be centered on the screen.
 
 ### Returns
 
 - An object containing the calculated X and Y coordinates to center the text:
-  - `x` (number): X-coordinate for centering the text horizontally.
-  - `y` (number): Y-coordinate for centering the text vertically.
+  - `x `(number): X-coordinate for centering the text horizontally.
+  - `y `(number): Y-coordinate for centering the text vertically.
 
 ### Example Usage
 
@@ -245,18 +245,18 @@ This function calculates the X and Y coordinates to center a given text within a
 
 ### Parameters
 
-- `x` (number): X-coordinate of the top-left corner of the object.
-- `y` (number): Y-coordinate of the top-left corner of the object.
-- `width` (number): Width of the object.
-- `height` (number): Height of the object.
-- `font` (Font): The font object used to render the text.
-- `text` (string): The text to be centered within the object.
+- `x `(number): X-coordinate of the top-left corner of the object.
+- `y `(number): Y-coordinate of the top-left corner of the object.
+- `width `(number): Width of the object.
+- `height `(number): Height of the object.
+- `font `(Font): The font object used to render the text.
+- `text `(string): The text to be centered within the object.
 
 ### Returns
 
 - An object containing the calculated X and Y coordinates to center the text within the object:
-  - `x` (number): X-coordinate for centering the text horizontally within the object.
-  - `y` (number): Y-coordinate for centering the text vertically within the object.
+  - `x `(number): X-coordinate for centering the text horizontally within the object.
+  - `y `(number): Y-coordinate for centering the text vertically within the object.
 
 ### Example Usage
 
@@ -279,8 +279,8 @@ myFont.print(coordinates.x, coordinates.y, myText);
 Checks if a value is present in the array.
 
 - **Parameters:**
-  - `array` (Array): The array to check.
-  - `value` (any type): The value to search for in the array.
+  - `array `(Array): The array to check.
+  - `value `(any type): The value to search for in the array.
 
 - **Returns:**
   - `true` if the value is present in the array.
@@ -292,8 +292,8 @@ Checks if a value is present in the array.
 Finds the first occurrence position of an item in an array.
 
 - **Parameters:**
-  - `item` (any type): The item to find in the array.
-  - `array` (Array): The array to search for the item.
+  - `item `(any type): The item to find in the array.
+  - `array `(Array): The array to search for the item.
 
 - **Returns:**
   - The index of the first occurrence of the item in the array, if found.
@@ -305,8 +305,8 @@ Finds the first occurrence position of an item in an array.
 Counts the number of occurrences of a character in a string, ignoring case.
 
 - **Parameters:**
-  - `c` (string): The character to count.
-  - `str` (string): The string to count the character in.
+  - `c `(string): The character to count.
+  - `str `(string): The string to count the character in.
 
 - **Returns:**
   - The number of times the character appears in the string.
@@ -317,7 +317,7 @@ Counts the number of occurrences of a character in a string, ignoring case.
 Checks if a string is a valid JSON.
 
 - **Parameters:**
-  - `jsonString` (string): The string to check.
+  - `jsonString `(string): The string to check.
 
 - **Returns:**
   - `true` if the string is a valid JSON.
@@ -329,7 +329,7 @@ Checks if a string is a valid JSON.
 Formats a numeric value as a currency string with two decimal places and thousands separator.
 
 - **Parameters:**
-  - `value` (number): The numeric value to be formatted.
+  - `value `(number): The numeric value to be formatted.
 
 - **Returns:**
   - A formatted string representing the value as currency.
@@ -348,7 +348,7 @@ Generates a Universally Unique Identifier (UUID).
 Converts the first character of a string to uppercase.
 
 - **Parameters:**
-  - `str` (string): The string to capitalize the first character of.
+  - `str `(string): The string to capitalize the first character of.
 
 - **Returns:**
   - A string with the first character in uppercase.
@@ -359,9 +359,9 @@ Converts the first character of a string to uppercase.
 Replaces all occurrences of a substring with another in a string.
 
 - **Parameters:**
-  - `str` (string): The string in which to make the replacement.
-  - `search` (string): The substring to be replaced.
-  - `replacement` (string): The substring for replacement.
+  - `str `(string): The string in which to make the replacement.
+  - `search `(string): The substring to be replaced.
+  - `replacement `(string): The substring for replacement.
 
 - **Returns:**
   - A new string with all occurrences of `search` replaced by `replacement`.
@@ -372,7 +372,7 @@ Replaces all occurrences of a substring with another in a string.
 Removes duplicate elements from an array.
 
 - **Parameters:**
-  - `array` (Array): The array from which to remove duplicate elements.
+  - `array `(Array): The array from which to remove duplicate elements.
 
 - **Returns:**
   - A new array containing only the unique elements from the original array.
@@ -383,7 +383,7 @@ Removes duplicate elements from an array.
 Sorts an array of numbers in ascending order.
 
 - **Parameters:**
-  - `array` (Array): The array of numbers to be sorted.
+  - `array `(Array): The array of numbers to be sorted.
 
 - **Returns:**
   - A new array containing the numbers from the original array, sorted in ascending order.
@@ -394,7 +394,7 @@ Sorts an array of numbers in ascending order.
 Checks if a value is `null` or `undefined`.
 
 - **Parameters:**
-  - `value` (any type): The value to be checked.
+  - `value `(any type): The value to be checked.
 
 - **Returns:**
   - `true` if the value is `null` or `undefined`.
@@ -406,7 +406,7 @@ Checks if a value is `null` or `undefined`.
 Checks if an object is an array.
 
 - **Parameters:**
-  - `obj` (any type): The object to be checked.
+  - `obj `(any type): The object to be checked.
 
 - **Returns:**
   - `true` if the object is an array.
@@ -418,7 +418,7 @@ Checks if an object is an array.
 Checks if a number is prime.
 
 - **Parameters:**
-  - `number` (number): The number to be checked.
+  - `number `(number): The number to be checked.
 
 - **Returns:**
   - `true` if the number is prime.
@@ -430,7 +430,7 @@ Checks if a number is prime.
 Checks if a string represents a number.
 
 - **Parameters:**
-  - `str` (string): The string to be checked.
+  - `str `(string): The string to be checked.
 
 - **Returns:**
   - `true` if the string represents a number.
@@ -457,11 +457,11 @@ Represents a generic object with properties such as position, size, speed, and g
 
 #### Parameters
 
-- `x` (number): X-coordinate of the object's initial position.
-- `y` (number): Y-coordinate of the object's initial position.
-- `width` (number): Width of the object.
-- `height` (number): Height of the object.
-- `speed` (number, optional): Initial speed of the object. Defaults to `0`.
+- `x `(number): X-coordinate of the object's initial position.
+- `y `(number): Y-coordinate of the object's initial position.
+- `width `(number): Width of the object.
+- `height `(number): Height of the object.
+- `speed `(number, optional): Initial speed of the object. Defaults to `0`.
 
 ### Methods
 
@@ -471,11 +471,11 @@ Represents a generic object with properties such as position, size, speed, and g
 
 Edits the properties of the object, such as position, size, and speed.
 
-- `x` (number): New X-coordinate of the object.
-- `y` (number): New Y-coordinate of the object.
-- `width` (number): New width of the object.
-- `height` (number): New height of the object.
-- `speed` (number, optional): New speed of the object. Defaults to the current speed.
+- `x `(number): New X-coordinate of the object.
+- `y `(number): New Y-coordinate of the object.
+- `width `(number): New width of the object.
+- `height `(number): New height of the object.
+- `speed `(number, optional): New speed of the object. Defaults to the current speed.
 
 ---
 
@@ -483,8 +483,8 @@ Edits the properties of the object, such as position, size, and speed.
 
 Sets the position of the object to the specified coordinates.
 
-- `x` (number): New X-coordinate of the object.
-- `y` (number): New Y-coordinate of the object.
+- `x `(number): New X-coordinate of the object.
+- `y `(number): New Y-coordinate of the object.
 
 ---
 
@@ -492,7 +492,7 @@ Sets the position of the object to the specified coordinates.
 
 Applies a gravity force to the object.
 
-- `gravity_value` (number): Value representing the gravity force to be applied.
+- `gravity_value `(number): Value representing the gravity force to be applied.
 
 ---
 
@@ -530,7 +530,7 @@ Updates the object's position based on its speed and destination coordinates. If
 
 Adds collision detection with another object and adjusts the position if necessary.
 
-- `obj` (object): Another object to check for collision with.
+- `obj `(object): Another object to check for collision with.
 
 ---
 
@@ -538,7 +538,7 @@ Adds collision detection with another object and adjusts the position if necessa
 
 Checks for collision with another object.
 
-- `obj` (object): Another object to check for collision with.
+- `obj `(object): Another object to check for collision with.
 
 ---
 
@@ -623,79 +623,79 @@ Draw.rect(0,0,50,50,Colors.Blue)
 ---
 
 ## Colors:
-- **Red:** ![Cor](https://via.placeholder.com/15/FF0000/000000?text=+) ` (255, 0, 0)`
-- **Green:** ![Cor](https://via.placeholder.com/15/00FF00/000000?text=+) ` (0, 255, 0)`
-- **Blue:** ![Cor](https://via.placeholder.com/15/0000FF/000000?text=+) ` (0, 0, 255)`
-- **White:** ![Cor](https://via.placeholder.com/15/FFFFFF/000000?text=+) ` (255, 255, 255)`
-- **Black:** ![Cor](https://via.placeholder.com/15/000000/FFFFFF?text=+) ` (0, 0, 0)`
-- **LightBlue:** ![Cor](https://via.placeholder.com/15/ADD8E6/000000?text=+) ` (173, 216, 230)`
-- **DarkRed:** ![Cor](https://via.placeholder.com/15/8B0000/000000?text=+) ` (139, 0, 0)`
-- **LightGreen:** ![Cor](https://via.placeholder.com/15/90EE90/000000?text=+) ` (144, 238, 144)`
-- **DarkBlue:** ![Cor](https://via.placeholder.com/15/00008B/000000?text=+) ` (0, 0, 139)`
-- **Purple:** ![Cor](https://via.placeholder.com/15/800080/000000?text=+) ` (128, 0, 128)`
-- **Yellow:** ![Cor](https://via.placeholder.com/15/FFFF00/000000?text=+) ` (255, 255, 0)`
-- **Orange:** ![Cor](https://via.placeholder.com/15/FFA500/000000?text=+) ` (255, 165, 0)`
-- **Pink:** ![Cor](https://via.placeholder.com/15/FFC0CB/000000?text=+) ` (255, 192, 203)`
-- **Brown:** ![Cor](https://via.placeholder.com/15/A52A2A/000000?text=+) ` (165, 42, 42)`
-- **Grey:** ![Cor](https://via.placeholder.com/15/808080/000000?text=+) ` (128, 128, 128)`
-- **LightGrey:** ![Cor](https://via.placeholder.com/15/D3D3D3/000000?text=+) ` (211, 211, 211)`
-- **DarkGrey:** ![Cor](https://via.placeholder.com/15/A9A9A9/000000?text=+) ` (169, 169, 169)`
-- **Cyan:** ![Cor](https://via.placeholder.com/15/00FFFF/000000?text=+) ` (0, 255, 255)`
-- **Magenta:** ![Cor](https://via.placeholder.com/15/FF00FF/000000?text=+) ` (255, 0, 255)`
-- **Salmon:** ![Cor](https://via.placeholder.com/15/FA8072/000000?text=+) ` (250, 128, 114)`
-- **Lime:** ![Cor](https://via.placeholder.com/15/00FF00/000000?text=+) ` (0, 255, 0)`
-- **Teal:** ![Cor](https://via.placeholder.com/15/008080/000000?text=+) ` (0, 128, 128)`
-- **Indigo:** ![Cor](https://via.placeholder.com/15/4B0082/000000?text=+) ` (75, 0, 130)`
-- **Turquoise:** ![Cor](https://via.placeholder.com/15/40E0D0/000000?text=+) ` (64, 224, 208)`
-- **Gold:** ![Cor](https://via.placeholder.com/15/FFD700/000000?text=+) ` (255, 215, 0)`
-- **LightPink:** ![Cor](https://via.placeholder.com/15/FFB6C1/000000?text=+) ` (255, 182, 193)`
-- **DarkOrange:** ![Cor](https://via.placeholder.com/15/FF8C00/000000?text=+) ` (255, 140, 0)`
-- **Olive:** ![Cor](https://via.placeholder.com/15/808000/000000?text=+) ` (128, 128, 0)`
-- **SlateGrey:** ![Cor](https://via.placeholder.com/15/708090/000000?text=+) ` (112, 128, 144)`
-- **Lavender:** ![Cor](https://via.placeholder.com/15/E6E6FA/000000?text=+) ` (230, 230, 250)`
-- **DarkSlateBlue:** ![Cor](https://via.placeholder.com/15/483D8B/000000?text=+) ` (72, 61, 139)`
-- **MediumSeaGreen:** ![Cor](https://via.placeholder.com/15/3CB371/000000?text=+) ` (60, 179, 113)`
-- **FireBrick:** ![Cor](https://via.placeholder.com/15/B22222/000000?text=+) ` (178, 34, 34)`
-- **MediumPurple:** ![Cor](https://via.placeholder.com/15/9370DB/000000?text=+) ` (147, 112, 219)`
-- **DarkCyan:** ![Cor](https://via.placeholder.com/15/008B8B/000000?text=+) ` (0, 139, 139)`
-- **RosyBrown:** ![Cor](https://via.placeholder.com/15/BC8F8F/000000?text=+) ` (188, 143, 143)`
-- **PaleGoldenrod:** ![Cor](https://via.placeholder.com/15/EEE8AA/000000?text=+) ` (238, 232, 170)`
-- **MediumSpringGreen:** ![Cor](https://via.placeholder.com/15/00FA9A/000000?text=+) ` (0, 250, 154)`
-- **Tomato:** ![Cor](https://via.placeholder.com/15/FF6347/000000?text=+) ` (255, 99, 71)`
-- **DarkGoldenrod:** ![Cor](https://via.placeholder.com/15/B8860B/000000?text=+) ` (184, 134, 11)`
-- **MidnightBlue:** ![Cor](https://via.placeholder.com/15/191970/000000?text=+) ` (25, 25, 112)`
-- **SlateBlue:** ![Cor](https://via.placeholder.com/15/6A5ACD/000000?text=+) ` (106, 90, 205)`
-- **DarkOliveGreen:** ![Cor](https://via.placeholder.com/15/556B2F/000000?text=+) ` (85, 107, 47)`
-- **Orchid:** ![Cor](https://via.placeholder.com/15/DA70D6/000000?text=+) ` (218, 112, 214)`
-- **SeaGreen:** ![Cor](https://via.placeholder.com/15/2E8B57/000000?text=+) ` (46, 139, 87)`
-- **Chocolate:** ![Cor](https://via.placeholder.com/15/D2691E/000000?text=+) ` (210, 105, 30)`
-- **Sienna:** ![Cor](https://via.placeholder.com/15/A0522D/000000?text=+) ` (160, 82, 45)`
-- **Peru:** ![Cor](https://via.placeholder.com/15/CD853F/000000?text=+) ` (205, 133, 63)`
-- **IndianRed:** ![Cor](https://via.placeholder.com/15/CD5C5C/000000?text=+) ` (205, 92, 92)`
-- **DarkViolet:** ![Cor](https://via.placeholder.com/15/9400D3/000000?text=+) ` (148, 0, 211)`
-- **SteelBlue:** ![Cor](https://via.placeholder.com/15/4682B4/000000?text=+) ` (70, 130, 180)`
-- **MediumVioletRed:** ![Cor](https://via.placeholder.com/15/C71585/000000?text=+) ` (199, 21, 133)`
-- **DeepPink:** ![Cor](https://via.placeholder.com/15/FF1493/000000?text=+) ` (255, 20, 147)`
-- **MediumAquamarine:** ![Cor](https://via.placeholder.com/15/66CDAA/000000?text=+) ` (102, 205, 170)`
-- **PaleVioletRed:** ![Cor](https://via.placeholder.com/15/DB7093/000000?text=+) ` (219, 112, 147)`
-- **DarkSlateGray:** ![Cor](https://via.placeholder.com/15/2F4F4F/000000?text=+) ` (47, 79, 79)`
-- **LightSlateGray:** ![Cor](https://via.placeholder.com/15/778899/000000?text=+) ` (119, 136, 153)`
-- **DarkSeaGreen:** ![Cor](https://via.placeholder.com/15/8FBC8F/000000?text=+) ` (143, 188, 143)`
-- **LightSeaGreen:** ![Cor](https://via.placeholder.com/15/20B2AA/000000?text=+) ` (32, 178, 170)`
-- **MediumOrchid:** ![Cor](https://via.placeholder.com/15/BA55D3/000000?text=+) ` (186, 85, 211)`
-- **Thistle:** ![Cor](https://via.placeholder.com/15/D8BFD8/000000?text=+) ` (216, 191, 216)`
-- **LightCoral:** ![Cor](https://via.placeholder.com/15/F08080/000000?text=+) ` (240, 128, 128)`
-- **DarkKhaki:** ![Cor](https://via.placeholder.com/15/BDB76B/000000?text=+) ` (189, 183, 107)`
-- **PaleTurquoise:** ![Cor](https://via.placeholder.com/15/AFEEEE/000000?text=+) ` (175, 238, 238)`
-- **MediumTurquoise:** ![Cor](https://via.placeholder.com/15/48D1CC/000000?text=+) ` (72, 209, 204)`
-- **DarkTurquoise:** ![Cor](https://via.placeholder.com/15/00CED1/000000?text=+) ` (0, 206, 209)`
-- **LightGoldenrodYellow:** ![Cor](https://via.placeholder.com/15/FAFAD2/000000?text=+) ` (250, 250, 210)`
-- **CornflowerBlue:** ![Cor](https://via.placeholder.com/15/6495ED/000000?text=+) ` (100, 149, 237)`
-- **MediumBlue:** ![Cor](https://via.placeholder.com/15/0000CD/000000?text=+) ` (0, 0, 205)`
-- **RosyRed:** ![Cor](https://via.placeholder.com/15/CC3333/000000?text=+) ` (204, 51, 51)`
-- **LavenderBlush:** ![Cor](https://via.placeholder.com/15/FFF0F5/000000?text=+) ` (255, 240, 245)`
-- **PaleGreen:** ![Cor](https://via.placeholder.com/15/98FB98/000000?text=+) ` (152, 251, 152)`
-- **CadetBlue:** ![Cor](https://via.placeholder.com/15/5F9EA0/000000?text=+) ` (95, 158, 160)`
-- **LightSteelBlue:** ![Cor](https://via.placeholder.com/15/B0C4DE/000000?text=+) ` (176, 196, 222)`
-- **DarkOrchid:** ![Cor](https://via.placeholder.com/15/9932CC/000000?text=+) ` (153, 50, 204)`
-- **PowderBlue:** ![Cor](https://via.placeholder.com/15/B0E0E6/000000?text=+) ` (176, 224, 230)`
+- **Red:** ![Cor](https://via.placeholder.com/15/FF0000/000000?text=+)  `(255, 0, 0)`
+- **Green:** ![Cor](https://via.placeholder.com/15/00FF00/000000?text=+)  `(0, 255, 0)`
+- **Blue:** ![Cor](https://via.placeholder.com/15/0000FF/000000?text=+)  `(0, 0, 255)`
+- **White:** ![Cor](https://via.placeholder.com/15/FFFFFF/000000?text=+)  `(255, 255, 255)`
+- **Black:** ![Cor](https://via.placeholder.com/15/000000/FFFFFF?text=+)  `(0, 0, 0)`
+- **LightBlue:** ![Cor](https://via.placeholder.com/15/ADD8E6/000000?text=+)  `(173, 216, 230)`
+- **DarkRed:** ![Cor](https://via.placeholder.com/15/8B0000/000000?text=+)  `(139, 0, 0)`
+- **LightGreen:** ![Cor](https://via.placeholder.com/15/90EE90/000000?text=+)  `(144, 238, 144)`
+- **DarkBlue:** ![Cor](https://via.placeholder.com/15/00008B/000000?text=+)  `(0, 0, 139)`
+- **Purple:** ![Cor](https://via.placeholder.com/15/800080/000000?text=+)  `(128, 0, 128)`
+- **Yellow:** ![Cor](https://via.placeholder.com/15/FFFF00/000000?text=+)  `(255, 255, 0)`
+- **Orange:** ![Cor](https://via.placeholder.com/15/FFA500/000000?text=+)  `(255, 165, 0)`
+- **Pink:** ![Cor](https://via.placeholder.com/15/FFC0CB/000000?text=+)  `(255, 192, 203)`
+- **Brown:** ![Cor](https://via.placeholder.com/15/A52A2A/000000?text=+)  `(165, 42, 42)`
+- **Grey:** ![Cor](https://via.placeholder.com/15/808080/000000?text=+)  `(128, 128, 128)`
+- **LightGrey:** ![Cor](https://via.placeholder.com/15/D3D3D3/000000?text=+)  `(211, 211, 211)`
+- **DarkGrey:** ![Cor](https://via.placeholder.com/15/A9A9A9/000000?text=+)  `(169, 169, 169)`
+- **Cyan:** ![Cor](https://via.placeholder.com/15/00FFFF/000000?text=+)  `(0, 255, 255)`
+- **Magenta:** ![Cor](https://via.placeholder.com/15/FF00FF/000000?text=+)  `(255, 0, 255)`
+- **Salmon:** ![Cor](https://via.placeholder.com/15/FA8072/000000?text=+)  `(250, 128, 114)`
+- **Lime:** ![Cor](https://via.placeholder.com/15/00FF00/000000?text=+)  `(0, 255, 0)`
+- **Teal:** ![Cor](https://via.placeholder.com/15/008080/000000?text=+)  `(0, 128, 128)`
+- **Indigo:** ![Cor](https://via.placeholder.com/15/4B0082/000000?text=+)  `(75, 0, 130)`
+- **Turquoise:** ![Cor](https://via.placeholder.com/15/40E0D0/000000?text=+)  `(64, 224, 208)`
+- **Gold:** ![Cor](https://via.placeholder.com/15/FFD700/000000?text=+)  `(255, 215, 0)`
+- **LightPink:** ![Cor](https://via.placeholder.com/15/FFB6C1/000000?text=+)  `(255, 182, 193)`
+- **DarkOrange:** ![Cor](https://via.placeholder.com/15/FF8C00/000000?text=+)  `(255, 140, 0)`
+- **Olive:** ![Cor](https://via.placeholder.com/15/808000/000000?text=+)  `(128, 128, 0)`
+- **SlateGrey:** ![Cor](https://via.placeholder.com/15/708090/000000?text=+)  `(112, 128, 144)`
+- **Lavender:** ![Cor](https://via.placeholder.com/15/E6E6FA/000000?text=+)  `(230, 230, 250)`
+- **DarkSlateBlue:** ![Cor](https://via.placeholder.com/15/483D8B/000000?text=+)  `(72, 61, 139)`
+- **MediumSeaGreen:** ![Cor](https://via.placeholder.com/15/3CB371/000000?text=+)  `(60, 179, 113)`
+- **FireBrick:** ![Cor](https://via.placeholder.com/15/B22222/000000?text=+)  `(178, 34, 34)`
+- **MediumPurple:** ![Cor](https://via.placeholder.com/15/9370DB/000000?text=+)  `(147, 112, 219)`
+- **DarkCyan:** ![Cor](https://via.placeholder.com/15/008B8B/000000?text=+)  `(0, 139, 139)`
+- **RosyBrown:** ![Cor](https://via.placeholder.com/15/BC8F8F/000000?text=+)  `(188, 143, 143)`
+- **PaleGoldenrod:** ![Cor](https://via.placeholder.com/15/EEE8AA/000000?text=+)  `(238, 232, 170)`
+- **MediumSpringGreen:** ![Cor](https://via.placeholder.com/15/00FA9A/000000?text=+)  `(0, 250, 154)`
+- **Tomato:** ![Cor](https://via.placeholder.com/15/FF6347/000000?text=+)  `(255, 99, 71)`
+- **DarkGoldenrod:** ![Cor](https://via.placeholder.com/15/B8860B/000000?text=+)  `(184, 134, 11)`
+- **MidnightBlue:** ![Cor](https://via.placeholder.com/15/191970/000000?text=+)  `(25, 25, 112)`
+- **SlateBlue:** ![Cor](https://via.placeholder.com/15/6A5ACD/000000?text=+)  `(106, 90, 205)`
+- **DarkOliveGreen:** ![Cor](https://via.placeholder.com/15/556B2F/000000?text=+)  `(85, 107, 47)`
+- **Orchid:** ![Cor](https://via.placeholder.com/15/DA70D6/000000?text=+)  `(218, 112, 214)`
+- **SeaGreen:** ![Cor](https://via.placeholder.com/15/2E8B57/000000?text=+)  `(46, 139, 87)`
+- **Chocolate:** ![Cor](https://via.placeholder.com/15/D2691E/000000?text=+)  `(210, 105, 30)`
+- **Sienna:** ![Cor](https://via.placeholder.com/15/A0522D/000000?text=+)  `(160, 82, 45)`
+- **Peru:** ![Cor](https://via.placeholder.com/15/CD853F/000000?text=+)  `(205, 133, 63)`
+- **IndianRed:** ![Cor](https://via.placeholder.com/15/CD5C5C/000000?text=+)  `(205, 92, 92)`
+- **DarkViolet:** ![Cor](https://via.placeholder.com/15/9400D3/000000?text=+)  `(148, 0, 211)`
+- **SteelBlue:** ![Cor](https://via.placeholder.com/15/4682B4/000000?text=+)  `(70, 130, 180)`
+- **MediumVioletRed:** ![Cor](https://via.placeholder.com/15/C71585/000000?text=+)  `(199, 21, 133)`
+- **DeepPink:** ![Cor](https://via.placeholder.com/15/FF1493/000000?text=+)  `(255, 20, 147)`
+- **MediumAquamarine:** ![Cor](https://via.placeholder.com/15/66CDAA/000000?text=+)  `(102, 205, 170)`
+- **PaleVioletRed:** ![Cor](https://via.placeholder.com/15/DB7093/000000?text=+)  `(219, 112, 147)`
+- **DarkSlateGray:** ![Cor](https://via.placeholder.com/15/2F4F4F/000000?text=+)  `(47, 79, 79)`
+- **LightSlateGray:** ![Cor](https://via.placeholder.com/15/778899/000000?text=+)  `(119, 136, 153)`
+- **DarkSeaGreen:** ![Cor](https://via.placeholder.com/15/8FBC8F/000000?text=+)  `(143, 188, 143)`
+- **LightSeaGreen:** ![Cor](https://via.placeholder.com/15/20B2AA/000000?text=+)  `(32, 178, 170)`
+- **MediumOrchid:** ![Cor](https://via.placeholder.com/15/BA55D3/000000?text=+)  `(186, 85, 211)`
+- **Thistle:** ![Cor](https://via.placeholder.com/15/D8BFD8/000000?text=+)  `(216, 191, 216)`
+- **LightCoral:** ![Cor](https://via.placeholder.com/15/F08080/000000?text=+)  `(240, 128, 128)`
+- **DarkKhaki:** ![Cor](https://via.placeholder.com/15/BDB76B/000000?text=+)  `(189, 183, 107)`
+- **PaleTurquoise:** ![Cor](https://via.placeholder.com/15/AFEEEE/000000?text=+)  `(175, 238, 238)`
+- **MediumTurquoise:** ![Cor](https://via.placeholder.com/15/48D1CC/000000?text=+)  `(72, 209, 204)`
+- **DarkTurquoise:** ![Cor](https://via.placeholder.com/15/00CED1/000000?text=+)  `(0, 206, 209)`
+- **LightGoldenrodYellow:** ![Cor](https://via.placeholder.com/15/FAFAD2/000000?text=+)  `(250, 250, 210)`
+- **CornflowerBlue:** ![Cor](https://via.placeholder.com/15/6495ED/000000?text=+)  `(100, 149, 237)`
+- **MediumBlue:** ![Cor](https://via.placeholder.com/15/0000CD/000000?text=+)  `(0, 0, 205)`
+- **RosyRed:** ![Cor](https://via.placeholder.com/15/CC3333/000000?text=+)  `(204, 51, 51)`
+- **LavenderBlush:** ![Cor](https://via.placeholder.com/15/FFF0F5/000000?text=+)  `(255, 240, 245)`
+- **PaleGreen:** ![Cor](https://via.placeholder.com/15/98FB98/000000?text=+)  `(152, 251, 152)`
+- **CadetBlue:** ![Cor](https://via.placeholder.com/15/5F9EA0/000000?text=+)  `(95, 158, 160)`
+- **LightSteelBlue:** ![Cor](https://via.placeholder.com/15/B0C4DE/000000?text=+)  `(176, 196, 222)`
+- **DarkOrchid:** ![Cor](https://via.placeholder.com/15/9932CC/000000?text=+)  `(153, 50, 204)`
+- **PowderBlue:** ![Cor](https://via.placeholder.com/15/B0E0E6/000000?text=+)  `(176, 224, 230)`
