@@ -9,10 +9,10 @@ With these modules I've created, it will make it easier to develop apps and game
 ## Modules:
 
 - **Utils:** Some useful functions
-- **Obj:** Collision functions
-- **Alert:** Display alert
+- **Obj:** Collision functions(under development)
+- **Alert:** Display alert(under development )
 - **Colors:** access colors easily  
-- **VKeyboard:** On-screen virtual keyboard
+- **VKeyboard:** On-screen virtual keyboard(under development)
 
 ## Example:
 
