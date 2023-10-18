@@ -69,7 +69,6 @@ export var CornflowerBlue = Color.new(100, 149, 237);
 export var MediumBlue = Color.new(0, 0, 205);
 export var RosyRed = Color.new(204, 51, 51);
 export var LavenderBlush = Color.new(255, 240, 245);
-export var PaleGreen = Color.new(152, 251, 152);
 export var CadetBlue = Color.new(95, 158, 160);
 export var LightSteelBlue = Color.new(176, 196, 222);
 export var DarkOrchid = Color.new(153, 50, 204);
